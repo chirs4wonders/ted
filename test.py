@@ -1,18 +1,13 @@
-print('Hello World')
+import streamlit as st
 
-#import numpy as np
-import pandas as pd
+st.title('Hello World!!!')
 
+st.header('Web application for Model Building')
 
-dict = {'gender':{'John':'m','Alex':'f'},
-        'age':{'John':22,'Alex':34}}
-        
-print(dict)
+st.subheader('Mini web application')
 
-df1 = pd.DataFrame(dict)
+user_name = st.text_input('Enter Your name')
 
-print(df1)
+greetings  = f'Welcome {user_name}, This is your Mini web application design'
 
-print(' This is beginning to sync')
-
-print('nice one chris')
+st.header(greetings)
